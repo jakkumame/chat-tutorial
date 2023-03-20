@@ -7,13 +7,8 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-list>
-    <ion-item routerLink="/auth/signin" routerDirection="root">
-      <ion-item>
-        <ion-label>
-          ログアウト
-        </ion-label>
-      </ion-item>
-    </ion-item>
-  </ion-list>
+
+  <ion-button (click)="logOut()" routerLink="/auth/signin">
+    <ion-icon slot="icon-only" name="log-out"></ion-icon>
+  </ion-button>
 </ion-content>

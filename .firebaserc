@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chat-tutorial-edec5": {
+      "hosting": {
+        "app": [
+          "chat-tutorial-edec5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chat-tutorial-edec5"
+  }
+}

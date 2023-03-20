@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../auth/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +9,15 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(
+    private authService: AuthService,
+    public router: Router,
+  ) {}
+
+  async logOut() {
+    await this.authService.logOut();
+
+    this.router.navigateByUrl('/auth/signin', { replaceUrl: true });
+  }
 
 }
