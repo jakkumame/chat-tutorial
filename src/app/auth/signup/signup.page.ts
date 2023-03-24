@@ -37,6 +37,7 @@ export class SignupPage implements OnInit {
   }
 
   async register() {
+    // loadingは重複クリックを無効にする
     const loading = await this.loadingController.create();
     await loading.present();
     const user = await this.authService.register(this.credentials.value);

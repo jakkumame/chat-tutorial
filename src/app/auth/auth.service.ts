@@ -32,7 +32,7 @@ export class AuthService {
         password
         );
         return user;
-    } catch (e) {
+    } catch (error) {
       return null;
     }
   };
@@ -45,7 +45,7 @@ export class AuthService {
         password
         );
         return user;
-    } catch (e) {
+    } catch (error) {
       return null;
     }
   };
@@ -58,7 +58,7 @@ export class AuthService {
     const alert = await this.alertController.create({
       header,
       message,
-      buttons: ["閉じる"]
+      buttons: ["OK!"]
     });
     await alert.present();
   }
