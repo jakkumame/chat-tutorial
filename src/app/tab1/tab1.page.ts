@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { ProfilePage } from './../shared/profile/profile.page';
+import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +9,13 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(public mdlCtrl: ModalController) {}
+
+  async ngOnInit() {
+    const modal = await this.mdlCtrl.create({
+      component: ProfilePage,
+    });
+    await modal.present();
+  }
 
 }
