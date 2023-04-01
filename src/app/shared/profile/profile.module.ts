@@ -6,7 +6,6 @@ import { IonicModule } from '@ionic/angular';
 
 
 
-import { ProfilePage } from './profile.page';
 
 @NgModule({
   imports: [
@@ -14,7 +13,5 @@ import { ProfilePage } from './profile.page';
     FormsModule,
     IonicModule,
   ],
-  declarations: [ProfilePage],
-  entryComponents: [ProfilePage],
 })
 export class ProfilePageModule {}

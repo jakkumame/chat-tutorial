@@ -5,10 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 
 import { Tab1Page } from './tab1.page';
+import { Tab1PageRoutingModule } from './tab1-routing.module';
+
+
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 
-import { Tab1PageRoutingModule } from './tab1-routing.module';
 
 @NgModule({
   imports: [

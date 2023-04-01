@@ -7,9 +7,11 @@ import { ModalController } from '@ionic/angular';
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-export class Tab1Page {
+export class Tab1Page implements OnInit {
 
-  constructor(public mdlCtrl: ModalController) {}
+  constructor(
+    public mdlCtrl: ModalController
+    ) {}
 
   async ngOnInit() {
     const modal = await this.mdlCtrl.create({
